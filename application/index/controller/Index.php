@@ -7,6 +7,8 @@ class Index extends Controller
 {
     public function index()
     {
+        $a=["dd"=>100,"tr"=>102];
+        $this->assign('list',$a);
         return $this->fetch('index');  
     }
 
